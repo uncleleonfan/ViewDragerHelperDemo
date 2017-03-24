@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leon.viewdraghelperdemo.MainActivity">
+
+    <!--    <com.example.leon.viewdraghelperdemo.MyViewGroup
+            android:id="@+id/my_view_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#ff0000"/>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#00ff00"/>
+
+        </com.example.leon.viewdraghelperdemo.MyViewGroup>-->
+
+    <com.example.leon.viewdraghelperdemo.DragLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="播放列表"
+            android:textColor="@android:color/white"/>
+
+        <include
+            layout="@layout/layout_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.example.leon.viewdraghelperdemo.DragLayout>
+
+
+</RelativeLayout>
